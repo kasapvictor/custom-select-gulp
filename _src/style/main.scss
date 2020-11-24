@@ -1,0 +1,145 @@
+:root {
+    --main-text-color: #444;
+    --input-text-color: dimgray;
+    --btn-padding: 10px 15px;
+    --link-text-color: royalblue;
+    --link-hover-text-color: dodgerblue;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    text-decoration: none;
+    color:var(--main-text-color);
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3  {
+    font-size: 30px;
+}
+
+h4  {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+button {
+    padding:var(--btn-padding);
+    color:#fff;
+    background:dodgerblue;
+    outline:none;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background: royalblue;
+}
+
+button:active {
+    background: midnightblue;
+}
+
+a {
+    color:var(--link-text-color);
+}
+
+a:hover {
+    color:var(--link-hover-text-color);
+}
+
+section {
+    padding: 30px 0;
+}
+
+input {
+    padding: var(--btn-padding);
+    color:var(--input-text-color);
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+.wrap-select {
+    margin-bottom: 300px;
+}
+
+.dropdown {
+    width: 400px;
+    position: relative;
+}
+
+.dropdown-label {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border:1px solid #eee;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.dropdown-menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    border-radius: 4px;
+    border:1px solid #eee;
+}
+
+.dropdown-menu li {
+    padding: 10px 10px 10px 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.dropdown-label:hover,
+.dropdown-menu li:hover {
+    background: #f2f2f2;
+}
+
+.dropdown-label:active,
+.dropdown-menu li:active {
+    background: #dbdbdb;
+}
+
+.dropdown.open .dropdown-menu {
+    display: block;
+}
